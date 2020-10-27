@@ -1,1 +1,1 @@
-# CMaga
+# ChMaga
