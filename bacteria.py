@@ -33,3 +33,6 @@ medium ={'cl','ribflv','thm','iodine','4abz','arg__L','asn__L','btn','ca2','coba
 Environment.from_compounds(medium).apply(bacteria, inplace=True)
 solution = FBA(bacteria)
 print (solution)
+
+solution2 = FBA(bacteria, constraints={'R_GALt2':0})
+print (solution2)
