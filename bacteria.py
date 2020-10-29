@@ -24,6 +24,7 @@ bacteria.add_reaction_from_str('R_TKT2: M_f6p_c + M_g3p_c --> M_xu5p__D_c + M_e4
 
 save_cbmodel(bacteria, 'bacteria_new.xml', flavor='cobra')
 
+#Medium can be further modified by adding/excluding lcts=lactose, glc__D=glucose, gal=galactose
 medium ={'cl','ribflv','thm','iodine','4abz','arg__L','asn__L','btn','ca2','cobalt2','cu2','fe2',
         'fe3','fol','gthrd','his__L','ile__L','leu__L','met__L','inost','k','mg2','mn2',
         'nac','pi','pydxn','tyr__L','val__L','zn2','so4','pnto__R','feenter','lcts'
