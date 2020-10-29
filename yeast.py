@@ -15,10 +15,12 @@ yeast.add_reaction_from_str('R_GLNS_1:  M_atp_c + M_glu__L_c + M_nh3_c <-> M_adp
 yeast.add_reaction_from_str('R_GDH2: M_nadp_c + M_glc__bD_c <-> M_h_c + M_nadph_c + M_15gl_c [-1000,1000]')
 yeast.add_reaction_from_str('LDH_D:M_lac__D_c + M_nad_c <-> M_h_c + M_nadh_c + M_pyr_c[-1000,1000]')                 
 yeast.add_reaction_from_str('R_EX_gln__L_e: M_gln__L_e <->  [-1000, 1000]')
-yeast.add_reaction_from_str('R_DAPDC: M_26dap__M_c + M_h_c <-> M_co2_c + M_lys__L_c [0,1000]')   
+yeast.add_reaction_from_str('R_DAPDC: M_26dap__M_c + M_h_c <-> M_co2_c + M_lys__L_c [0,1000]')  
+yeast.add_reaction_from_str('R_EX_lcts_e:M_lcts_e<->  [-1000, 1000]')
 
 metabolite1= Metabolite('M_lcts_e','Lactose','C_e')
 yeast.add_metabolite(metabolite1)
+
 
 save_cbmodel(yeast, 'yeast_new.xml', flavor='cobra')
 
